@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.main-btn {
+	padding: 12px 24px;
+
+	border: none;
+
+	border-radius: 4px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: transparent;
+
+	color: #ffffff;
+
+	transition: all 0.2s ease;
+	cursor: pointer;
+
+	&-active,
+	&:hover {
+		background: linear-gradient(
+			101.9deg,
+			rgba(201, 34, 227, 0.4) 7.67%,
+			rgba(153, 30, 234, 0.4) 52.66%,
+			rgba(73, 23, 246, 0.4) 93.7%
+		);
+	}
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+body {
+	background: linear-gradient(to right, #151029, #35204a, #272133, #161726);
+	color: #fff;
+}

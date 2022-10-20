@@ -1,0 +1,146 @@
+.hero {
+	margin-top: 115px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__left {
+		max-width: 499px;
+	}
+	&__title {
+		margin-bottom: 12px;
+
+		font-family: 'Ruda';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 64px;
+		line-height: 82px;
+		/* or 128% */
+
+		color: #ffffff;
+
+		span {
+			background: linear-gradient(
+				to right,
+				rgba(175, 37, 211, 1),
+				rgba(151, 37, 214, 1),
+				rgba(94, 35, 217, 1)
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&__text {
+		margin-bottom: 40px;
+
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		/* or 24px */
+
+		color: #d7d7d7;
+	}
+	&__btns {
+		margin-bottom: 75px;
+
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		p {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			/* identical to box height */
+
+			color: #ffffff;
+		}
+	}
+	&__icon {
+		padding: 20px 20.8px;
+
+		border: 1px solid rgba(175, 37, 211, 0.2);
+		border-radius: 50%;
+	}
+	&__numbers {
+		width: 459px;
+
+		padding: 24px 47px;
+
+		display: flex;
+		gap: 70px;
+
+		background: rgba(255, 255, 255, 0.13);
+		backdrop-filter: blur(2px);
+		/* Note: backdrop-filter has minimal browser support */
+	}
+	&__numtitle {
+		margin-bottom: 10px;
+		font-family: 'Ruda';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 40px;
+
+		color: #ffffff;
+	}
+	&__numtext {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+
+		flex: none;
+		order: 1;
+		flex-grow: 0;
+		color: #d7d7d7;
+	}
+
+	&__right {
+		width: 50%;
+		height: 700px;
+		position: relative;
+
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: -40px;
+			left: 50%;
+
+			width: 72px;
+			height: 72px;
+
+			background: #8a40ff;
+			border-radius: 8px;
+		}
+	}
+	&__img {
+		position: absolute;
+
+		&--1 {
+			z-index: 1;
+			top: -50px;
+			left: 0;
+		}
+		&--2 {
+			left: 133px;
+			bottom: -40px;
+		}
+		&--3 {
+			right: -150px;
+			top: 70px;
+		}
+		&--4 {
+			right: -230px;
+			bottom: 30px;
+		}
+	}
+}

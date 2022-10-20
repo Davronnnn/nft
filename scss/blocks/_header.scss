@@ -1,0 +1,22 @@
+.header {
+	margin-top: 46px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.nav__list {
+		display: flex;
+		gap: 48px;
+	}
+	.nav__link {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		/* identical to box height */
+
+		color: #ffffff;
+	}
+}
